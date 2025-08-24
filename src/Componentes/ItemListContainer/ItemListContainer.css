@@ -1,0 +1,14 @@
+:root{
+    --color-azul-oscuro: #091057;
+    --color-azul-claro: #024CAA;
+    --color-naranja: #EC8305;
+    --color-naranja-claro: #f8b96b;
+    --color-gris-oscuro: #bbb6b6;
+    --color-gris-claro: #e7e1e1;
+}
+
+.mensaje{
+    color: var(--color-azul-oscuro);
+    text-align: center;
+    margin-top: 20px;
+}

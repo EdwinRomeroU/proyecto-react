@@ -2,7 +2,7 @@ import './CartWidget.css';
 
 const CartWidget = () => {
 
-    const imgCart = "https://cdn-icons-png.flaticon.com/512/1170/1170678.png";
+    const imgCart = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMMhOySko3hQ5qtOoYgg8WuRSaMDCjQKRiDA&s";
 
     return (
         <div>

@@ -1,7 +1,9 @@
+import "./ItemListContainer.css";
+
 const ItemListContainer = ({ mensaje }) => {
     return (
         <div>
-            <h2>{mensaje}</h2>
+            <h2 className="mensaje">{mensaje}</h2>
         </div>
     );
 }
