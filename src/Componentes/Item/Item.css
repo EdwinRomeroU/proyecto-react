@@ -1,0 +1,25 @@
+.producto{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.producto img{
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+} 
+
+.producto button{
+    background-color:  #091057;;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
