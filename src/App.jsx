@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Anillos from './Componentes/Anillos/Anillos'
 import Aretes from './Componentes/Aretes/Aretes'
 import Contacto from './Componentes/Contacto/Contacto'
+import ItemDetailContainer from './Componentes/ItemDetailContainer/ItemDetailContainer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
         <NavBar/>
         <ItemListContainer/>
+        <ItemDetailContainer/>
         <Routes>
           <Route path="/Anillos/:id" element={<Anillos/>}/>
           <Route path="/Aretes" element={<Aretes/>}/>
