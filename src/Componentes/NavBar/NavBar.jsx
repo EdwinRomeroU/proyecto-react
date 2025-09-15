@@ -9,8 +9,8 @@ const NavBar = () => {
             <nav>
                 <ul>
                     <li><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'inactive-link')} to="/">Inicio</NavLink></li>
-                    <li><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'inactive-link')} to="/Aretes">Aretes</NavLink></li>
-                    <li><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'inactive-link')} to="/Anillos">Anillos</NavLink></li>
+                    <li><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'inactive-link')} to="/Categoria/Aretes">Aretes</NavLink></li>
+                    <li><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'inactive-link')} to="/Categoria/Anillos">Anillos</NavLink></li>
                     <li><NavLink className={({ isActive }) => (isActive ? 'active-link' : 'inactive-link')} to="/Contacto">Contacto</NavLink></li>
                 </ul>
             </nav>

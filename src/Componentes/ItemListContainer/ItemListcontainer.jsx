@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { getProductos } from "../../Asycmocks";
+import { useParams } from "react-router-dom";
+import { getProductos, getProductosByCategoria } from "../../Asycmocks";
 import "./ItemListContainer.css";
 import ItemList from "../ItemList/ItemList";
 
@@ -7,11 +8,16 @@ const ItemListContainer = () => {
 
     const [productos, setProducto] = useState([]);
 
+    const {idCategoria} = useParams();
+
     useEffect(()=>{
-        getProductos()
+
+        const funcionProductos = idCategoria ? getProductosByCategoria : getProductos;
+
+        funcionProductos(idCategoria)
             .then(respuesta => setProducto(respuesta))
             .catch(error => console.log(error))
-    }, []);
+    }, [idCategoria]);
 
     return (
         <>
