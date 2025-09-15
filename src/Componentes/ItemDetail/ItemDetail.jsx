@@ -1,3 +1,4 @@
+import ItemCount from "../ItemCount/ItemCount";
 import "./ItemDetail.css"
 
 const ItemDetail = ({id, nombre, categoria, precio, img, stock, descripcion}) => {
@@ -10,7 +11,7 @@ const ItemDetail = ({id, nombre, categoria, precio, img, stock, descripcion}) =>
             <p>Id: {id}</p>
             <p>Stock disponible: {stock}</p>
             <p>Descripción: {descripcion}</p>
-            <button>Agregar al carrito</button>
+            <ItemCount stock={stock} inicial={1} manejadorCantidad={(cantidad) => console.log(`Se agregaron ${cantidad} productos al carrito`)}/>
         </div>
     );
 }  
